@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "66b32b1c-caf0-4151-8ead-f42ea1f805a7",
+		"name": "Trabajo-stock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27078162"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3002/api/categories/",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjgzODYzOTQ0LCJleHAiOjE2ODM4NjUzODR9.wT3E81WhLic2HGCfzXqSJQJMK4Rf1IarhfAFmwtCe4g",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"Comestibles\",\r\n    \"enabled\":\"1\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/categories/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"categories",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/categories/products",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjgzODYzOTQ0LCJleHAiOjE2ODM4NjUzODR9.wT3E81WhLic2HGCfzXqSJQJMK4Rf1IarhfAFmwtCe4g",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/categories/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"categories",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/categories/products/3",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjgzODYzOTQ0LCJleHAiOjE2ODM4NjUzODR9.wT3E81WhLic2HGCfzXqSJQJMK4Rf1IarhfAFmwtCe4g",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/categories/products/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"categories",
+						"products",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

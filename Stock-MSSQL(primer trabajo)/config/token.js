@@ -1,0 +1,1 @@
+module.exports = { key: "-IsfdT2023." }
